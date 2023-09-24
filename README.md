@@ -3,8 +3,10 @@
 #  Training LLMs models with Quantization and PEFT
 
 This repository contains different code train LLMs using different datasets with quantization and PEFT (Progressive Embedding Fine-Tuning). 
+The setup is focused on using a very small CPU with at most 12Gb.
 
-For now, there is only one script `stf_train_opt350m.py` for finetuning `facebook/opt350m` model on the codealpaca20k dataset. The current setup is focused on using a very small CPU with at most 12Gb.
+
+For now, there is only one script `stf_train_opt350m.py` for finetuning `facebook/opt350m` model on the codealpaca20k dataset. The resulting model is available [here](https://huggingface.co/harpomaxx/opt350m-codealpaca20k) 
 
 ## Dependencies
 
