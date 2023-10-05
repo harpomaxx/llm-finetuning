@@ -25,7 +25,7 @@ if __name__ == "__main__":
     parser.add_argument("--prompt", type=str, default="""Code a function in PYTHON language for calculating prime numbers ### Answer:""", help="Prompt for the generator.")
     parser.add_argument("--cli", action="store_true", help="Activate interactive CLI mode.")
     parser.add_argument("--quantize", action="store_true", default = False, help="Load the model using quantization.")
-    parser.add_argument("--template", type=str, default="### Human {prompt} ### Assistant", help="Template for the prompt.")
+    parser.add_argument("--template", type=str, default="### Human {prompt} ### Assistant", help="Template for the prompt. Eg. ### Human: {prompt} ### Assistant: ")
 
     args = parser.parse_args()
 
